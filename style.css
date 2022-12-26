@@ -1,0 +1,253 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, select, textarea{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{  
+  background: #BFD7E4;
+  /* display: flex; 
+  flex-direction: column;
+  align-items: center;*/
+ }
+
+body::before{
+  content:'';
+  width: 100%;
+  height: 473px;
+   
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: #293241;
+}
+
+.page{
+  width: 750px;
+  margin: auto;
+}
+
+header{
+  text-align: center;
+}
+
+header h1,h2 {
+  font-family: 'Staatliches';
+  font-weight: 400;
+  color: white; 
+}
+
+header h1{
+  font-size: 36px;
+  line-height: 45px;
+
+  margin-top: 107px;
+}
+
+header h2{
+  font-size: 24px;
+  line-height: 34px;
+}
+
+p{
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  padding-bottom: 25px;
+}
+
+top{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 750px;
+  height: 133px;
+  margin-top: 32px;
+   
+  background:#F67669 ;
+  border-radius: 20px 20px 0 0;
+  
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap:35px;
+  
+  border-radius: 0 0 20px 20px;
+  padding: 30px 64px 64px 64px;                  
+  
+  background: #ffffff;
+}
+
+
+
+fieldset{
+  border: none;
+  
+}
+
+.fieldset-wrapper{
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  
+}
+
+.fieldset-wrapper legend{
+  font-family: "Staatliches";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  color:#253B51;
+  
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 8px;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.input-wrapper label,
+.checkbox-wrapper{
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+  
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span{
+  font-size: 12px;
+  line-height: 20px;
+   
+  color: #C1BCCC;
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select{  
+  background: #fafafc;
+  
+  border:1px solid #E6E6F0;
+  border-radius: 8px;
+  
+  height: 56px;
+
+  padding: 27px 27px;
+
+  font-family: "poppins"; /* tive que botar aqui pq n ta pegando o lá do body*/
+  font-size: 14px;
+  line-height: 24px;
+
+  color:#67656a ;
+ /* appearance: none;
+  -webkit-appearance: none; COMO TIRAR O DETALHE DE DENTRO DO INPUT???*/
+}
+
+#feedback{
+  height: 167px;
+  padding: 10px;
+}
+
+#mentor-select {   
+  height: 56px;
+  width: 300px;
+  padding:20px;
+
+}
+
+.checkbox-wrapper input{
+  display: none;
+}
+
+.checkbox-wrapper input:checked + label::before { /*NÃO ENTENDI PQ USAR O BEFORE NESSE*/
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.checkbox-wrapper label{
+  
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.checkbox-wrapper label::before{
+  content:'';
+  width: 24px;
+  height: 24px;
+  
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  background: #fafafc;
+}
+
+
+.col-2{
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.col-2 > div:nth-child(1){
+  width: 100%;
+}
+
+.col-2 > div:nth-child(2){
+  width: 100%;
+}
+
+.col-3{
+  display: flex;
+  gap:32px;
+}
+
+.col-3 > div:nth-child(1){
+  width: 100%;
+}
+
+.subcol-2{
+  display: flex;
+  gap:10px; 
+  width: 100%; 
+}
+
+.subcol-2 > div:nth-child(1){
+  width: 100%;
+}
+
+.subcol-2 > div:nth-child(2){
+  width: 100%;
+}
+
+
+.button input{
+  font-family: "Staatliches";
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+
+  height: 51px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #F67669;
+}
+
+.button input:hover{
+  background:#db5a4b;
+}
+
+
